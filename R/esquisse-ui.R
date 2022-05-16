@@ -49,13 +49,13 @@ esquisse_ui <- function(id,
         label = ph("gear-six", height = "2em", title = i18n("Display settings")),
         class = "btn-sm",
         title = i18n("Display settings")
-      ),
-      actionButton(
-        inputId = ns("close"),
-        label = ph("x", height = "2em", title = i18n("Close Window")),
-        class = "btn-sm",
-        title = i18n("Close Window")
       )
+    #   actionButton(
+    #     inputId = ns("close"),
+    #     label = ph("x", height = "2em", title = i18n("Close Window")),
+    #     class = "btn-sm",
+    #     title = i18n("Close Window")
+    #   )
     ),
     tags$div(
       class = "pull-left",
