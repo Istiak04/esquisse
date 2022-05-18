@@ -41,7 +41,7 @@ esquisse_ui <- function(id,
   ns <- NS(id)
   tag_header <- tags$div(
     class = "esquisse-title-container",
-    tags$h1("Self Analysis", class = "esquisse-title"),
+    tags$h1("Custom Analysis", class = "esquisse-title"),
     tags$div(
       class = "pull-right",
       actionButton(
@@ -101,7 +101,7 @@ esquisse_ui <- function(id,
       style = "overflow-y: auto;",
       tags$div(
         style = "height: 100%; min-height: 400px;",
-        play_pause_input(ns("play_plot")),
+        # play_pause_input(ns("play_plot")),
         ggplot_output(id = ns("plooooooot"), width = "100%", height = "100%")
       )
     ),
@@ -130,7 +130,7 @@ esquisse_ui <- function(id,
 #' @order 3
 #'
 #' @export
-esquisseContainer <- function(width = "100%", height = "700px", fixed = FALSE) {
+esquisseContainer <- function(width = "100%", height = "800px", fixed = FALSE) {
   force(width)
   force(height)
   force(fixed)
